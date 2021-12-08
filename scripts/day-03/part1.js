@@ -1,6 +1,7 @@
 function createArraysByPosition(arr) {
   const arrayByPosition = [];
 
+  // assumes all items in array are of equal length
   for (let i = 0; i < arr[0].length; i++) {
     arrayByPosition.push([]);
     arr.forEach((item, index) => {
