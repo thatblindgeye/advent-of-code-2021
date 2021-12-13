@@ -25,8 +25,8 @@ function reduceArrayItems(arr) {
 }
 
 export default function getPowerConsumption(reportArray) {
-  const positionedArray = createArraysByPosition(reportArray);
-  const reducedArrays = reduceArrayItems(positionedArray);
+  const positionedArrays = createArraysByPosition(reportArray);
+  const reducedArrays = reduceArrayItems(positionedArrays);
 
   const gammaArray = reducedArrays.map((item) => (item < 0 ? 0 : 1));
   const gammaRate = gammaArray.join('');
